@@ -1,3 +1,42 @@
+////////////////////////////////////////////////
+//  Arrays         ////////////////////////////
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////
+
+const fruits = ['🍉', '🍌', '🍎', '🍍', '🍇', '🍊']
+// console.log(fruits)
+
+// console.log(`I want a ${fruits[4]}`)
+
+fruits.push('🥑')
+// console.log(fruits)
+
+fruits.push('🍅')
+// console.log(fruits)
+// console.log(fruits.slice(2,4))
+console.log(fruits.indexOf("🍇"))
+console.log(fruits.length)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //JavaScript 101
 
 // console.log("Mwaka");
@@ -14,9 +53,9 @@
 ////////////////////////////////////////////////
 //  Baby Weather App ////////////////////////////
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////
-let weather = prompt("How is the weather?")
-if (weather == "rainy") {
-  console.log("Get an umbrella")
-}else {
-  console.log("Wear your sunglasses")
-}
+// let weather = prompt("How is the weather?")
+// if (weather == "rainy") {
+//   console.log("Get an umbrella")
+// }else {
+//   console.log("Wear your sunglasses")
+// }
