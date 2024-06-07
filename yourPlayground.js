@@ -1,4 +1,31 @@
+/*
+      ------------------------
+      |     Advanced Array & Objects | Exercises | Part 1      |
+      ------------------------
+*/
 
+const countLetters = (phrase) => {
+
+  //can be replaced with phrase.length
+  //for in for getting indexes us for of for getting values
+  let count = 0
+  for(index in phrase) {
+    // console.log(Number(letter)+1)
+    count = Number(index)+1
+    // console.log(letter)
+  }
+
+  console.log(`${phrase} has ${count} including spaces`)
+}
+
+countLetters("Mwakanemela")
+
+
+/*
+      ------------------------
+      |     end of Advanced Array & Objects | Exercises | Part 1       |
+      ------------------------
+*/
 
 /*
       ------------------------
@@ -7,25 +34,25 @@
 */
 
 // a function to print doubles of an array 
-const doubleArray = (numbers) => {
+// const doubleArray = (numbers) => {
 
-  let result = []
-  for (const number of numbers){
-    result.push(number * 2)
-  }
-  return result
-}
+//   let result = []
+//   for (const number of numbers){
+//     result.push(number * 2)
+//   }
+//   return result
+// }
 
-const squareArray = (numbers) => {
+// const squareArray = (numbers) => {
 
-  let result = []
-  for (const number of numbers){
-    result.push(number ** 2)
-  }
-  return result
-}
-const numbers = [1, 2, 3, 4, 5]
-console.log(squareArray(numbers))
+//   let result = []
+//   for (const number of numbers){
+//     result.push(number ** 2)
+//   }
+//   return result
+// }
+// const numbers = [1, 2, 3, 4, 5]
+// console.log(squareArray(numbers))
 
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
