@@ -1,36 +1,63 @@
+
+
+/*
+      ------------------------
+      |     for loops        |
+      ------------------------
+*/
+
+const fruits = ['🍉', '🍌', '🍎', '🍍', '🍇', '🍊']
+
+for(const fruit of fruits) {
+  console.log(fruit)
+}
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(i, fruits[i])
+// }
+
+
+/*
+      ------------------------
+      |  end of  for loops        |
+      ------------------------
+*/
+
+
+
+
 /*
       Objects {}
 */
 
 
-const person = {
-  firstName: "Mwakanemela",
-  lastName: "Kayange"
-}
+// const person = {
+//   firstName: "Mwakanemela",
+//   lastName: "Kayange"
+// }
 
-const greetings = (firstName, lastName, assets, liabilities) => {
-  const person2 = {
-    firstName: firstName,
-    lastName: lastName,
-    assets: assets,
-    liabilities: liabilities,
-    networth: function () {
-      return this.assets - this.liabilities
-    }
-  }
-  const greet = `Hello ${person2.firstName} ${person2["lastName"]}, how are you doing today? because your networth is K${person2.networth()}`
+// const greetings = (firstName, lastName, assets, liabilities) => {
+//   const person2 = {
+//     firstName: firstName,
+//     lastName: lastName,
+//     assets: assets,
+//     liabilities: liabilities,
+//     networth: function () {
+//       return this.assets - this.liabilities
+//     }
+//   }
+//   const greet = `Hello ${person2.firstName} ${person2["lastName"]}, how are you doing today? because your networth is K${person2.networth()}`
 
-  return greet
-}
+//   return greet
+// }
 
-console.log(greetings(person.firstName, person.lastName, 100000, 50000))
+// console.log(greetings(person.firstName, person.lastName, 100000, 50000))
 
 // console.log(person)
 // console.log(person.firstName) //dot notation
 // console.log(person["lastName"]) //bracket notation
 
 //assign object
-person.phone = "088-64-74-493"
+// person.phone = "088-64-74-493"
 // console.log(person.phone)
 
 // console.log(person)
