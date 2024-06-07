@@ -6,11 +6,43 @@
       ------------------------
 */
 
-const fruits = ['🍉', '🍌', '🍎', '🍍', '🍇', '🍊']
+// a function to print doubles of an array 
+const doubleArray = (numbers) => {
 
-for(const fruit of fruits) {
-  console.log(fruit)
+  let result = []
+  for (const number of numbers){
+    result.push(number * 2)
+  }
+  return result
 }
+
+const squareArray = (numbers) => {
+
+  let result = []
+  for (const number of numbers){
+    result.push(number ** 2)
+  }
+  return result
+}
+const numbers = [1, 2, 3, 4, 5]
+console.log(squareArray(numbers))
+
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const result = [];
+// // let num = 0
+// for(const number of numbers) {
+//   result.push(number * 2);
+//   // console.log(num, number)
+//   // num++
+// }
+
+// console.log(`doubled numbers - ${result}`)
+// const fruits = ['🍉', '🍌', '🍎', '🍍', '🍇', '🍊']
+
+// for(const fruit of fruits) {
+//   console.log(fruit * 2)
+// }
 // for (let i = 0; i < fruits.length; i++) {
 //   console.log(i, fruits[i])
 // }
