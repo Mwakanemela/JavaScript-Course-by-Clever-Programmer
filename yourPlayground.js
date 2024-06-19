@@ -4,20 +4,37 @@
       ------------------------
 */
 
-//sum of all numbers in an array
+// find max value in an array
 
-const sumArray = (numbers) => {
+const max = (array) => {
+      let maxValue = array[0];
 
-      let result = 0;
-      for(index of numbers) {
-            result = result + index
+      for (number of array) {
+            console.log(number)
+            if(number > maxValue) {
+                  maxValue = number;
+            }
       }
 
-      console.log(`sum is ${result}`)
+      return {maxValue}
 }
+const array = [1, 12, 3, 4]
+console.log(max(array))
 
-const array = [1, 2, 3, 4]
-sumArray(array)
+//sum of all numbers in an array
+
+// const sumArray = (numbers) => {
+
+//       let result = 0;
+//       for(index of numbers) {
+//             result = result + index
+//       }
+
+//       console.log(`sum is ${result}`)
+// }
+
+// const array = [1, 2, 3, 4]
+// sumArray(array)
 
 // const countLetters = (phrase) => {
 
