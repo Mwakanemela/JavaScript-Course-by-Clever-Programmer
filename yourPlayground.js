@@ -4,21 +4,36 @@
       ------------------------
 */
 
-const countLetters = (phrase) => {
+//sum of all numbers in an array
 
-  //can be replaced with phrase.length
-  //for in for getting indexes us for of for getting values
-  let count = 0
-  for(index in phrase) {
-    // console.log(Number(letter)+1)
-    count = Number(index)+1
-    // console.log(letter)
-  }
+const sumArray = (numbers) => {
 
-  console.log(`${phrase} has ${count} including spaces`)
+      let result = 0;
+      for(index of numbers) {
+            result = result + index
+      }
+
+      console.log(`sum is ${result}`)
 }
 
-countLetters("Mwakanemela")
+const array = [1, 2, 3, 4]
+sumArray(array)
+
+// const countLetters = (phrase) => {
+
+//   //can be replaced with phrase.length
+//   //for in for getting indexes us for of for getting values
+//   let count = 0
+//   for(index in phrase) {
+//     // console.log(Number(letter)+1)
+//     count = Number(index)+1
+//     // console.log(letter)
+//   }
+
+//   console.log(`${phrase} has ${count} including spaces`)
+// }
+
+// countLetters("Mwakanemela")
 
 
 /*
