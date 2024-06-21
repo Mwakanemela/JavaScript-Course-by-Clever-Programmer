@@ -4,22 +4,42 @@
       ------------------------
 */
 
-// find max value in an array
 
-const max = (array) => {
-      let maxValue = array[0];
+//letter frequency 
+const letterFrequency = (phrase) => {
+      // make frequency object
+      let frequency = {}
 
-      for (number of array) {
-            console.log(number)
-            if(number > maxValue) {
-                  maxValue = number;
+      for(letter of phrase) {
+            // check if letter exists in frequency
+            if(letter in frequency) {
+                  // increment the value by +1
+                  frequency[letter] += 1
+            } else {
+                  // otherwise, set the value to 1
+                  frequency[letter] = 1
             }
       }
-
-      return {maxValue}
+      return frequency
 }
-const array = [1, 12, 3, 4]
-console.log(max(array))
+
+console.log(letterFrequency('mwaka'))
+// find max value in an array
+
+// const max = (array) => {
+//       let maxValue = array[0];
+
+//       for (number of array) {
+//             console.log(number)
+//             if(number > maxValue) {
+//                   maxValue = number;
+//             }
+//       }
+
+//       return {maxValue}
+// }
+// const array = [1, 12, 3, 4]
+// console.log(max(array))
 
 //sum of all numbers in an array
 
