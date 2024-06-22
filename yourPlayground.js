@@ -33,9 +33,22 @@ const nums = [1, 2, 3, 4, 5, 6]
 const filterResult = nums.filter(num => num > 2)
 // console.log(filterResult)
 
-playground.innerHTML = `<h1>Mwakanemela Kayange</h1>`
+playground.innerHTML = `<h1>Mwakanemela Kayange:2024</h1>`
+const languages = [
+      {"name": "Javascript", "type": "Frontend"},
+      {"name": "Python", "type": "Backend"},
+      {"name": "Java", "type": "Backend"}
+]
 
+const language = languages.map(language =>{
+      return `${ language.name} is a ${ language.type} language`
+})
 
+const backendLanguages = languages.filter(language => language.type === 'Backend')
+// console.log(backendLanguages[0].name)
+console.log(JSON.stringify(backendLanguages))
+playground.innerHTML = JSON.stringify(backendLanguages)
+// console.log(`language names: ${language}`)
 // end of Advanced Array Methods | Part 1
 
 
