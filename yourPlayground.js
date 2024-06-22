@@ -9,13 +9,24 @@
       
 */
 
-            //map demo
+//map demo
 
 // const mapResult = [1, 2, 3].map(number => number * 2)
-const doubleMap = (numbers) => {
-  return numbers.map(number => number * 2)
+// const doubleMap = (numbers) => {
+//   return numbers.map(number => number * 2)
+// }
+// console.log(doubleMap([1, 2, 3]))
+
+const filterFun = (numbers, greaterThan) => {
+      let result = []
+      for (const number of numbers) {
+            if (number > greaterThan) {
+                  result.push(number)
+            }
+      }
+      return result
 }
-console.log(doubleMap([1, 2, 3]))
+console.log(filterFun([1, 2, 3, 4, 5, 6], 3))
 // end of Advanced Array Methods | Part 1
 
 
