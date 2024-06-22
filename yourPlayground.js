@@ -31,7 +31,10 @@ const filterFun = (numbers, greaterThan) => {
 
 const nums = [1, 2, 3, 4, 5, 6]
 const filterResult = nums.filter(num => num > 2)
-console.log(filterResult)
+// console.log(filterResult)
+
+playground.innerHTML = `<h1>Mwakanemela Kayange</h1>`
+
 
 // end of Advanced Array Methods | Part 1
 
