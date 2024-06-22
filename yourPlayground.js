@@ -1,5 +1,24 @@
 /*
       ------------------------
+      |     Advanced Array Methods | Part 1     |
+      ------------------------
+
+      higher order functions: map filter reduce
+
+      map: loops and returns an array
+      
+*/
+
+            //map demo
+
+const mapResult = [1, 2, 3].map(number => number * 2)
+console.log(mapResult)
+// end of Advanced Array Methods | Part 1
+
+
+
+/*
+      ------------------------
       |     Advanced Array & Objects | Exercises | Part 1      |
       ------------------------
 */
