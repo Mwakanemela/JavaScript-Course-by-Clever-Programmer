@@ -4,26 +4,61 @@
       ------------------------
 */
 
-
-//letter frequency 
-const letterFrequency = (phrase) => {
-      // make frequency object
+const frequencyLoopFunction = (phrase) => {
       let frequency = {}
 
-      for(letter of phrase) {
-            // check if letter exists in frequency
+      for(const letter of phrase) {
             if(letter in frequency) {
-                  // increment the value by +1
-                  frequency[letter] += 1
-            } else {
-                  // otherwise, set the value to 1
+                  frequency[letter]++
+            }else {
                   frequency[letter] = 1
             }
       }
       return frequency
 }
 
+//letter frequency 
+const letterFrequency = (phrase) => {
+      // make frequency object
+      // let frequency = {}
+
+      // for(letter of phrase) {
+      //       // check if letter exists in frequency
+      //       if(letter in frequency) {
+      //             // increment the value by +1
+      //             frequency[letter] += 1
+      //       } else {
+      //             // otherwise, set the value to 1
+      //             frequency[letter] = 1
+      //       }
+      // }
+      // return frequency
+      return frequencyLoopFunction(phrase)
+}
+
 console.log(letterFrequency('mwaka'))
+
+const wordFrequency = (phrase) => {
+      let frequency = {}
+
+      //turn phrase into an array by seperating by space
+      let words = phrase.split(' ')
+
+      return frequencyLoopFunction(words)
+      
+      // for(const word of words) {
+      //       if(word in frequency) {
+      //             frequency[word]++
+      //       }else {
+      //             frequency[word] = 1
+      //       }
+      // }
+      // return frequency
+}
+
+console.log(wordFrequency('lol what lol'))
+
+
 // find max value in an array
 
 // const max = (array) => {
