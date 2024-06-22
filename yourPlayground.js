@@ -26,7 +26,13 @@ const filterFun = (numbers, greaterThan) => {
       }
       return result
 }
-console.log(filterFun([1, 2, 3, 4, 5, 6], 3))
+// console.log(filterFun([1, 2, 3, 4, 5, 6], 3))
+
+
+const nums = [1, 2, 3, 4, 5, 6]
+const filterResult = nums.filter(num => num > 2)
+console.log(filterResult)
+
 // end of Advanced Array Methods | Part 1
 
 
