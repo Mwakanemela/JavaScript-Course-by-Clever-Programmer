@@ -9,6 +9,14 @@
       
 */
 
+//reduce demo 
+const nums = [1,2,3]
+const result = nums.reduce((previousValue,currentValue) => {
+      // console.log(a+b)
+      return previousValue + currentValue
+      // console.log(b)
+})
+console.log(result)
 //map demo
 
 // const mapResult = [1, 2, 3].map(number => number * 2)
