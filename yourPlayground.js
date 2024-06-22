@@ -11,8 +11,11 @@
 
             //map demo
 
-const mapResult = [1, 2, 3].map(number => number * 2)
-console.log(mapResult)
+// const mapResult = [1, 2, 3].map(number => number * 2)
+const doubleMap = (numbers) => {
+  return numbers.map(number => number * 2)
+}
+console.log(doubleMap([1, 2, 3]))
 // end of Advanced Array Methods | Part 1
 
 
