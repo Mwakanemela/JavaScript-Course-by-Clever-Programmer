@@ -4,59 +4,59 @@
       ------------------------
 */
 
-const frequencyLoopFunction = (phrase) => {
-      let frequency = {}
+// const frequencyLoopFunction = (phrase) => {
+//       let frequency = {}
 
-      for(const letter of phrase) {
-            if(letter in frequency) {
-                  frequency[letter]++
-            }else {
-                  frequency[letter] = 1
-            }
-      }
-      return frequency
-}
+//       for(const letter of phrase) {
+//             if(letter in frequency) {
+//                   frequency[letter]++
+//             }else {
+//                   frequency[letter] = 1
+//             }
+//       }
+//       return frequency
+// }
 
 //letter frequency 
-const letterFrequency = (phrase) => {
-      // make frequency object
-      // let frequency = {}
+// const letterFrequency = (phrase) => {
+//       // make frequency object
+//       // let frequency = {}
 
-      // for(letter of phrase) {
-      //       // check if letter exists in frequency
-      //       if(letter in frequency) {
-      //             // increment the value by +1
-      //             frequency[letter] += 1
-      //       } else {
-      //             // otherwise, set the value to 1
-      //             frequency[letter] = 1
-      //       }
-      // }
-      // return frequency
-      return frequencyLoopFunction(phrase)
-}
+//       // for(letter of phrase) {
+//       //       // check if letter exists in frequency
+//       //       if(letter in frequency) {
+//       //             // increment the value by +1
+//       //             frequency[letter] += 1
+//       //       } else {
+//       //             // otherwise, set the value to 1
+//       //             frequency[letter] = 1
+//       //       }
+//       // }
+//       // return frequency
+//       return frequencyLoopFunction(phrase)
+// }
 
-console.log(letterFrequency('mwaka'))
+// console.log(letterFrequency('mwaka'))
 
-const wordFrequency = (phrase) => {
-      let frequency = {}
+// const wordFrequency = (phrase) => {
+//       let frequency = {}
 
-      //turn phrase into an array by seperating by space
-      let words = phrase.split(' ')
+//       //turn phrase into an array by seperating by space
+//       let words = phrase.split(' ')
 
-      return frequencyLoopFunction(words)
-      
-      // for(const word of words) {
-      //       if(word in frequency) {
-      //             frequency[word]++
-      //       }else {
-      //             frequency[word] = 1
-      //       }
-      // }
-      // return frequency
-}
+//       return frequencyLoopFunction(words)
 
-console.log(wordFrequency('lol what lol'))
+//       // for(const word of words) {
+//       //       if(word in frequency) {
+//       //             frequency[word]++
+//       //       }else {
+//       //             frequency[word] = 1
+//       //       }
+//       // }
+//       // return frequency
+// }
+
+// console.log(wordFrequency('lol what lol'))
 
 
 // find max value in an array
