@@ -1,3 +1,13 @@
+//preparation with Math.random()
+const randomFruit = (fruits) => {
+      const random = Math.floor(Math.random() * fruits.length)
+
+      return fruits[random]
+}
+
+let fruits = ['🍌', '🍎', '🍊', '🍐']
+console.log(randomFruit(fruits))
+
 /*
       ------------------------
       |     Advanced Array Methods | Part 1     |
