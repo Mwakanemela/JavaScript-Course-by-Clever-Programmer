@@ -6,8 +6,22 @@ const randomFruit = (fruits) => {
 }
 
 let fruits = ['🍌', '🍎', '🍊', '🍐']
-console.log(randomFruit(fruits))
+// console.log(randomFruit(fruits))
 
+
+//if else if
+const weatherScore = (weather) => {
+      if(weather == "rainy") {
+            return 1
+      }
+      else if(weather == "sunny") {
+            return -1
+      }else {
+            return 0
+      }
+}
+
+console.log(weatherScore("sunny"))
 /*
       ------------------------
       |     Advanced Array Methods | Part 1     |
