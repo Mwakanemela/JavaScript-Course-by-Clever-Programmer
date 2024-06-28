@@ -21,7 +21,7 @@ const weatherScore = (weather) => {
       }
 }
 
-console.log(weatherScore("sunny"))
+// console.log(weatherScore("sunny"))
 /*
       ------------------------
       |     Advanced Array Methods | Part 1     |
